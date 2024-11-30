@@ -1,39 +1,39 @@
 import axios from "axios";
 import { DetailedHTMLProps, FormEvent, HTMLAttributes, useState } from "react";
-import { twMerge } from "tailwind-merge";
+// import { twMerge } from "tailwind-merge"
 
 import { Button } from "./Button";
 import { Input } from "./Input";
 
 
 export const WaitlistForm = (
-  props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
-    id: string;
-  }
+  // props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
+  //   id: string;
+  // }
 ) => {
-  const { id, ...divProps } = props;
+  // const { id, ...divProps } = props;
 
-  const [email, setEmail] = useState("");
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  // const [email, setEmail] = useState("");
+  // const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    // e.preventDefault();
-    // setEmailSubmitted(true);
-    // const res = await axios.post("/api/waitlist", { email });
-    // setEmail("");
-    // window.alert(`Email "${res.data.email}" submitted!`);
-  };
+  // const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setEmailSubmitted(true);
+  //   const res = await axios.post("/api/waitlist", { email });
+  //   setEmail("");
+  //   window.alert(`Email "${res.data.email}" submitted!`);
+  // };
 
-  const EmailMessage = () => (
-    <p className="mt-3 text-sm text-light">
-      {emailSubmitted
-        ? "We'll keep you posted!"
-        : "Be the first to experience Vivid."}
-    </p>
-  );
+  // const EmailMessage = () => (
+  //   <p className="mt-3 text-sm text-light">
+  //     {emailSubmitted
+  //       ? "We'll keep you posted!"
+  //       : "Be the first to experience Vivid."}
+  //   </p>
+  // );
 
   return (
-    <div {...divProps} className={twMerge("col", divProps.className)}>
+    <div>
       {/* <form className="relative gap-2 md:gap-4 row" onSubmit={handleSubmit}>
         <Input
           type="email"
