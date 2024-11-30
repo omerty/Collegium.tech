@@ -3,7 +3,6 @@ import { FeatureBlocks } from "../src/sections/FeatureBlocks";
 import { Footer } from "../src/sections/Footer";
 import { Header } from "../src/sections/Header";
 import { Hero } from "../src/sections/Hero";
-import { Newsletter } from "../src/sections/Newsletter";
 import { Testimonials } from "../src/sections/Testimonials";
 
 const Home = ({
@@ -21,7 +20,7 @@ const Home = ({
         <Features />
         <FeatureBlocks />
         <Testimonials />
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
       <Footer />
     </div>
