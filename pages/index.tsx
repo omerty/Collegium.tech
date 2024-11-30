@@ -20,7 +20,6 @@ const Home = ({
         <Features />
         <FeatureBlocks />
         <Testimonials />
-        {/* <Newsletter /> */}
       </main>
       <Footer />
     </div>
