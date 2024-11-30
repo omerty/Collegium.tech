@@ -1,4 +1,4 @@
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import "../styles/globals.css";
 
 import AOS from "aos";
@@ -8,15 +8,9 @@ import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
 
-// Initialize Vivid (https://vivid.lol)
-if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
-  import("vivid-studio").then((v) => v.run());
-  import("vivid-studio/style.css");
-}
-
-const siteTitle = "Vivid — Build visually. Code faster.";
+const siteTitle = "Collegium A University Marketplace";
 const siteDescription =
-  "Make CSS styling a breeze with Vivid's in-browser visual editor that automatically updates your code.";
+  "A University Marketplace";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { isDarkMode, toggle: toggleDarkMode } = useDarkMode();
@@ -50,11 +44,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
-        <link rel="icon" href="/icons/favicon.ico" />
-        <meta
-          property="og:image"
-          content="https://vivid.lol/images/landing-page.png"
-        />
+        <link rel="icon" href="/icons/favicon.png" />
       </Head>
       <NextSeo
         title={siteTitle}

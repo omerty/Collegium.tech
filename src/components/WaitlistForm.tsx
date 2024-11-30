@@ -17,11 +17,11 @@ export const WaitlistForm = (
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setEmailSubmitted(true);
-    const res = await axios.post("/api/waitlist", { email });
-    setEmail("");
-    window.alert(`Email "${res.data.email}" submitted!`);
+    // e.preventDefault();
+    // setEmailSubmitted(true);
+    // const res = await axios.post("/api/waitlist", { email });
+    // setEmail("");
+    // window.alert(`Email "${res.data.email}" submitted!`);
   };
 
   const EmailMessage = () => (
